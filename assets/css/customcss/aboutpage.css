@@ -1,0 +1,12 @@
+section.wrapper.style-5{
+	padding-top:45px;
+}
+
+h3.abouttitle{
+	font-size: 1.7em;
+	padding-bottom: 0 !important;
+}
+
+h3.abouttitle:after{
+	display:none;
+}

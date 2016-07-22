@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lotus Life Foundation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/donate.css" />
+		<link rel="stylesheet" href="assets/css/animate.css"/>
+		<link rel="stylesheet" href="assets/css/proximanova.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="icon" href="../../images/llf-stripe.png">
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<img id="header-image" src="../../images/logo_blockflower_white.png">
+						<h1 id="header-text"><a href="index.html" style="font-family:Oswald;">Lotus Life Foundation</a></h1>
+						<h2 id="header-donate" ><a class="button special" href="donate-alt.html" style="font-family:Proxima Nova Alt Light;">Donate Now</a></h2>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span style="font-family:Proxima Nova Alt Light;">Menu</span></a>
+									<div id="menu">
+										<ul id="menu-items">
+											<li><a href="index.html">Home</a></li>
+											<li><a href="whatwedo.html">What We Do</a></li>
+											<li><a href="medical.html">Medical</a></li>
+											<li><a href="education.html">Education</a></li>
+											<li><a href="rd.html">R + D</a></li>
+											<li><a href="getinvolved.html">Get Involved</a></li>
+											<li><a href="donate-alt.html">Donate</a></li>
+											<!-- <li><a href="updates.html">Updates</a></li>
+											<li><a href="blog-masonry.html">Blog</a></li> -->
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="contactus.html">Contact Us</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						 <header style="height:400px">
+							<h2 style="font-size:2em;color:white;font-family:Oswald;">Empower a child today.</h2>
+							<p style="font-family:Proxima Nova Alt Light;">Your donation goes a lot farther than you think!</p>
+							<!-- <p>enable to empower</p> -->
+						</header>
+
+					<section class="wrapper style5">
+						<div class="row" style="margin:auto;">
+							<div class="col-6">
+								<div id="donate-box-alt">
+									<div style="padding-top:15px;" class="col-6">
+										<center><h4 style="color:black;font-family:Oswald">Help a child take</br>their first steps</h4></center>
+										<form id="donate_form" method="post" action="http://localhost:8080/payments/">
+												<div class="row " style="margin:auto;">
+													<div class="col-6">
+														<div style="padding-bottom:3px;">
+															<center><strong><span style="color:black;font-family:Proxima Nova Alt Light;">Donate (in USD)</span></strong></center>
+														</div>
+													<div id="donate-entry" class="12u$">
+		                                                <!-- <span class="money-unit">$</span> -->
+		                      <input style="display:none;background-color:white;display:block;font-family:Proxima Nova Alt Light;" type="text" name="amt" id="amt" value="50.00" onfocus="this.value = this.value;"/>
+													<!-- <script
+														src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+														data-key="pk_test_k1gf8VBHucMuSllctL3VSU3y"
+														data-amount="100"
+														data-name="Lotus Life Foundation"
+														data-description="2 widgets ($1.00)"
+														data-image="/128x128.png"
+														data-locale="auto">
+													</script> -->
+													</div>
+													</div>
+
+													<div class="col-6" style="margin:auto">
+													<div style="margin: auto;" class="12u$">
+														<ul class="actions" >
+
+															<!-- END STRIPE -->
+
+
+
+
+
+															<!-- <li><input type="reset" value="Reset" /></li> -->
+														</ul>
+													</div>
+													</div>
+												</div>
+											</form>
+											<form action="http://localhost:8080/payments" method="POST">
+
+											</form>
+
+
+											<script src="https://checkout.stripe.com/checkout.js"></script>
+
+											<button id="customButton">Purchase</button>
+
+											<script>
+												var handler = StripeCheckout.configure({
+													key: 'pk_test_k1gf8VBHucMuSllctL3VSU3y',
+													image: 'https://s3.amazonaws.com/stripe-uploads/acct_16jEGoGQ7exMDg4dmerchant-icon-1452794246493-logo_blockflower_orange.png',
+													locale: 'auto',
+													token: function(token) {
+														// Use the token to create the charge with a server-side script.
+														// You can access the token ID with `token.id`
+													}
+												});
+
+												$('#customButton').on('click', function(e) {
+													// Open Checkout with further options
+													handler.open({
+														name: 'Lotus Life Foundation',
+														description: '2 widgets',
+														amount: 2000
+													});
+													e.preventDefault();
+												});
+
+												// Close Checkout on page navigation
+												$(window).on('popstate', function() {
+													handler.close();
+												});
+											</script>
+											<!-- CHECK/INKIND POPUP -->
+											<center><a id="donate-extra" class="button small" data-popup-open="popup-1" href="#" style="font-family:Proxima Nova Alt Light;">Donate by Check or In-Kind</a></center>
+
+											<div id="donate-popup" class="popup" data-popup="popup-1">
+											    <div class="popup-inner">
+											        <h2>DONATE BY CHECK</h2>
+											        <p>Please make all checks payable to Lotus Life Foundation and mail to <strong>10 Lynnfield, Irvine CA 92620</strong>. Please write any details pertaining to who the donation is in honor of, etc. in the memo of the check.</p>
+											        <h2>DONATE IN-KIND</h2>
+											        <p>In-Kind donations are greatly appreciated as well. If you would like to make an in-kind donation please email our Director of Operations, Aditi Ramesh, at aditi@lotuslifefoundation.org with the details of your donation.</p>
+											        <p><a class="button small" data-popup-close="popup-1" href="#" style="font-family:Proxima Nova Alt Light">Close</a></p>
+											        <a class="popup-close" data-popup-close="popup-1" href="#" style="text-decoration:none;">x</a>
+											    </div>
+											</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="contactus.html" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="http://facebook.com/lotuslifefoundation" class="icon fa-facebook" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><span class="label">Facebook</span></a></li>
+							<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<li><a href="https://medium.com/lotus-life" class="icon fa-medium" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><span class="label">Medium</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li><strong><a href"#">Lotus Life Foundation</a></strong> is a 501c3 nonprofit organization.</li>
+							<li>&copy; Lotus Life Foundation</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+
+
+
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+
+<script>
+	var handler = StripeCheckout.configure({
+		key: 'pk_test_k1gf8VBHucMuSllctL3VSU3y',
+		image: 'https://s3.amazonaws.com/stripe-uploads/acct_16jEGoGQ7exMDg4dmerchant-icon-1452794246493-logo_blockflower_orange.png',
+		locale: 'auto',
+		token: function(token) {
+			// Use the token to create the charge with a server-side script.
+			// You can access the token ID with `token.id`
+			var hiddenInput = document.createElement('input');
+			hiddenInput.type = 'hidden';
+			hiddenInput.name = 'token';
+			hiddenInput.value = token.id;
+			document.getElementById("donate_form").appendChild(hiddenInput);
+			document.getElementById("donate_form").submit();
+		}
+	});
+
+	$('#stripe-demo').on('click', function(e) {
+		// Open Checkout with further options
+		handler.open({
+			name: 'Lotus Life Foundation',
+			description: '2 widgets',
+			amount: 2000
+		});
+		e.preventDefault();
+	});
+
+	// Close Checkout on page navigation
+	$(window).on('popstate', function() {
+		handler.close();
+	});
+</script>

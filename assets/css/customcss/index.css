@@ -1,0 +1,24 @@
+ul.icons.major{
+	width: 100%;
+}
+
+ul.icons.major li{
+	width:33%;
+	max-width: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.smallvector{
+	height: 50px;
+
+}
+.smallvector.pencil{
+	margin-left: 15px;
+}
+
+.wrapper.style6 header#project-header-text.major h2{
+	border-color: #21B2A6;
+	margin-left: 0;
+	margin-right: 0;
+}

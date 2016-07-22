@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lotus Life Foundation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/medical.css" />
+		<link rel="stylesheet" href="assets/css/animate.css"/>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="icon" href="../../images/llf-stripe.png">
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<img id="header-image" src="../../images/logo_blockflower_white.png">
+						<h1><a id="header-text" href="index.html">Lotus Life Foundation</a></h1>
+						<h2 id="header-donate" ><a class="button special" href="donate.html">Donate Now</a></h2>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="whatwedo.html">What We Do</a></li>
+											<li><a href="medical.html">Medical</a></li>
+											<li><a href="education.html">Education</a></li>
+											<li><a href="rd.html">R + D</a></li>
+											<li><a href="getinvolved.html">Get Involved</a></li>
+											<li><a href="donate.html">Donate</a></li>
+											<!-- <li><a href="updates.html">Updates</a></li>
+											<li><a href="blog-masonry.html">Blog</a></li> -->
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="contactus.html">Contact Us</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<!-- <header>
+							<center><img id="landing-logo" src="../../images/med-kit.png"></center>
+							<h2>Medical</h2>
+							<p>enable to empower</p> 
+						 </header> -->
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<div class="grid-container outline">
+
+									<div class="row">
+										<div class="col-6">
+											
+											<div  class="col-6"> <!-- Description Text -->
+												<center><h2 style="font-size:2em;font-family: Proxima Nova;color:black;">Empower a child today.</h2>
+													<p style="font-family:Avenir;">Your donation goes a lot farther than you think!</p></center>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div id="donate_box" class="col-2">
+											<div style="padding-top:15px;" class="col-6">
+												<center><h4 style="color:black;">Help a child take</br>their first steps</h4></center>
+											</div>
+											<form id="donate_form" method="post" action="#">
+												<div class="row uniform">
+													<div style="width:300px;margin-left:15%;position:relative;" class="12u$">
+		                                                <span class="money-unit">$</span>
+		                                                <input style="background-color:white;display:block;" type="text" name="donate-amt" id="donate-amt" value="   50" autofocus="autofocus" onfocus="this.value = this.value;"/>
+		                                                
+													</div>
+													
+													<!-- <div style="margin-left:15%" class="12u$(small)">
+														<input type="checkbox" id="donate-honor" name="donate-honor">
+														<label id="donateshow" for="donate-honor">Donate in honor of someone.</label>
+													</div>
+
+
+													<div style="width:300px;margin-left:15%;position:relative;" id="donatehidden" class="12u$">
+														<div style="padding-bottom:5px;">
+															<input style="background-color:white;" type="text" name="donate-honor-name" id="donate-honor-name" value="" placeholder="Name of Honoree"/>
+														</div>
+														<div style="padding-bottom:5px;">
+															<input style="background-color:white;" type="text" name="donate-honor-email" id="donate-honor-email" value="" placeholder="Email of Honoree"/>
+														</div>
+														<textarea style="background-color:white" name="demo-message" id="demo-message" placeholder="Message" rows="6"></textarea>
+													</div>
+
+
+													<div style="margin-left:15%" class="12u$(small)">
+														<input type="checkbox" id="donate-monthly" name="donate-monthly">
+														<label for="donate-monthly">Make a monthly donation.</label>
+													</div> -->
+		                                           
+													
+													<div style="margin-left:15%;" class="12u$">
+														<ul class="actions">
+															<li><input id="stripe-demo" type="submit" value="Donate" class="special" /></li>
+
+															<!-- STRIPE -->
+															<script src="https://checkout.stripe.com/checkout.js"></script>
+															<script>
+																var handler = StripeCheckout.configure({
+																  key: "pk_test_k1gf8VBHucMuSllctL3VSU3y",
+																  image: "../../images/llf-stripe.png",
+																  name: "Lotus Life Foundation",
+																  description: "Give a new life to a child.",
+																  panelLabel: "Donate",
+																  address: true,
+																  allowRememberMe: false
+																});
+
+																document.getElementById('stripe-demo').addEventListener('click', function(e) {
+																  handler.open({
+																  	amount: $('#donate-amt').val() * 100,
+																  });
+																  e.preventDefault();
+																});
+															</script>
+															<!-- END STRIPE -->
+
+
+															
+
+
+															<li><input type="reset" value="Reset" /></li>
+														</ul>
+													</div>
+												</div>
+											</form>
+
+
+											<!-- CHECK/INKIND POPUP -->
+											<center><a style="color:white;font-size:12px;" class="button small" data-popup-open="popup-1" href="#">Donate by Check or In-Kind</a></center>
+
+											<div class="popup" data-popup="popup-1">
+											    <div class="popup-inner">
+											        <h2>DONATE BY CHECK</h2>
+											        <p>Please make all checks payable to Lotus Life Foundation and mail to <strong>10 Lynnfield, Irvine CA 92620</strong>. Please write any details pertaining to who the donation is in honor of, etc. in the memo of the check.</p>
+											        <h2>DONATE IN-KIND</h2>
+											        <p>In-Kind donations are greatly appreciated as well. If you would like to make an in-kind donation please email our Director of Operations, Aditi Ramesh, at aditi@lotuslifefoundation.org with the details of your donation.</p>
+											        <p><a class="button small" data-popup-close="popup-1" href="#">Close</a></p>
+											        <a class="popup-close" data-popup-close="popup-1" href="#" style="text-decoration:none;">x</a>
+											    </div>
+											</div>
+
+										</div>
+
+
+									</div>
+							
+								</div>
+
+								
+
+						</section>
+
+						
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="contactus.html" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="http://facebook.com/lotuslifefoundation" class="icon fa-facebook" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><span class="label">Facebook</span></a></li>
+							<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<li><a href="https://medium.com/lotus-life" class="icon fa-medium" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><span class="label">Medium</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li><strong><a href"#">Lotus Life Foundation</a></strong> is a 501c3 nonprofit organization.</li>
+							<li>&copy; Lotus Life Foundation</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+
+			
+
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
