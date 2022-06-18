@@ -71,10 +71,11 @@
 												<div class="row " style="margin:auto;">
 													<div class="col-6">
 														<div style="padding-bottom:3px;">
+
+														<!--
 															<center><strong><span style="color:black;font-family:Proxima Nova Alt Light;">Donate (in USD)</span></strong></center>
 														</div>
 													<div id="donate-entry" class="12u$">
-		                                                <!-- <span class="money-unit">$</span> -->
 		                                                <input style="background-color:white;display:block;font-family:Proxima Nova Alt Light;" type="text" name="amt" id="amt" value="50.00" onfocus="this.value = this.value;"/>
 
 													</div>
@@ -83,17 +84,14 @@
 													<div class="col-6" style="margin:auto">
 													<div style="margin: auto;" class="12u$">
 														<ul class="actions" >
-															<center><li><input id="stripe-demo" type="submit" value="Donate" class="special" style="font-family:Proxima Nova Alt Light;" /></li></center>
+															<center><li><input id="stripe-demo" type="submit" value="Donate" class="special" style="font-family:Proxima Nova Alt Light;" /></li></center> -->
 
-															<!-- STRIPE -->
-
-															<!-- END STRIPE -->
-
-
-
-
-
-															<!-- <li><input type="reset" value="Reset" /></li> -->
+															<!-- Paypal -->		
+															<form action="https://www.paypal.com/donate" method="post" target="_top">
+															<input type="hidden" name="hosted_button_id" value="6CVFFVK5SPF5U" />
+															<center><input type="submit" value="Donate" class="special" style="font-family:Proxima Nova Alt Light;" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /></center>
+															<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+															</form>
 														</ul>
 													</div>
 													</div>
@@ -120,7 +118,7 @@
 
 
 								<div class="table-wrapper" style="width:70%; margin:auto;font-family:Proxima Nova Alt Light">
-									<center><h4 style="color:black;padding-top:100px;padding-bottom:40px;font-family:Oswald">Where does your donation even go?</h4></center>
+									<center><h4 style="color:black;padding-top:100px;padding-bottom:40px;font-family:Oswald">Where does your donation go?</h4></center>
 										<table>
 											<thead>
 												<tr>
